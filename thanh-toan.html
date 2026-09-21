@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh toán - Mộc Book</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- DÁN PHẦN TOPBAR + HEADER + NAV vào đây -->
+
+  <main>
+    <section class="page">
+      <div class="section-head"><h1>Thanh toán</h1></div>
+
+      <form class="form-box" onsubmit="event.preventDefault(); location.href='thanh-cong.html';" style="width:min(700px,100%);margin:25px 0">
+        <label>Họ và tên người nhận</label>
+        <input required placeholder="Nguyễn Văn A">
+
+        <label>Số điện thoại</label>
+        <input required pattern="[0-9]{9,11}" placeholder="0912345678">
+
+        <label>Địa chỉ nhận hàng</label>
+        <textarea required rows="3" placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành phố"></textarea>
+
+        <label>Phương thức thanh toán</label>
+        <select>
+          <option>Thanh toán khi nhận hàng (COD)</option>
+          <option>Chuyển khoản ngân hàng</option>
+        </select>
+
+        <p class="total">Tổng thanh toán: 277.000đ</p>
+        <button class="btn">Xác nhận đặt hàng</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 Mộc Book — Nhà sách trực tuyến</footer>
+</body>
+</html>

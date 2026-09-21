@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập - Mộc Book</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- DÁN PHẦN TOPBAR + HEADER + NAV vào đây -->
+
+  <main>
+    <form class="form-box" onsubmit="event.preventDefault(); location.href='tai-khoan.html';">
+      <h1>Đăng nhập</h1>
+      <p class="notice">Bạn có thể nhập bất kỳ email và mật khẩu để thử giao diện.</p>
+
+      <label>Họ và tên</label>
+      <input required placeholder="Nguyễn Văn A">
+
+      <label>Email</label>
+      <input type="email" required placeholder="email@example.com">
+
+      <label>Mật khẩu</label>
+      <input type="password" required placeholder="••••••••">
+
+      <button class="btn">Đăng nhập</button>
+    </form>
+  </main>
+
+  <footer>© 2026 Mộc Book — Nhà sách trực tuyến</footer>
+</body>
+</html>
